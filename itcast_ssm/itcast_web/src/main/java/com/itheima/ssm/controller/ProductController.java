@@ -22,6 +22,8 @@ public class ProductController {
     @RequestMapping("/save.do")
     public String save(Product product)throws Exception{
         productService.save(product);
+
+        System.out.println("1111111");
         return "redirect:findAll.do";
     }
 
@@ -35,8 +37,6 @@ public class ProductController {
         mv.setViewName("product-list1");
         return mv;
     }
-
-
 
 
 
