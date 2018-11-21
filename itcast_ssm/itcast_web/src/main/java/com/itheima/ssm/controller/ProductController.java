@@ -23,7 +23,7 @@ public class ProductController {
     public String save(Product product)throws Exception{
         productService.save(product);
 
-        System.out.println("1111111");
+        System.out.println("1111111ok");
         return "redirect:findAll.do";
     }
 
@@ -33,11 +33,8 @@ public class ProductController {
     public ModelAndView findAll() throws Exception{
         ModelAndView mv = new ModelAndView();
         List<Product> ps = productService.findAll();
-        mv.addObject("productlist",ps);
-        mv.setViewName("product-list1");
+        mv.addObject("productList",ps);
+        mv.setViewName("product-list");
         return mv;
     }
-
-
-
 }
