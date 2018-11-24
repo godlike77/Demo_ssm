@@ -32,4 +32,21 @@ public interface IRoleDao {
     void deleteFromUser_RoleByRoleId(String id);
     @Delete("delete from role_permission where roleId=#{id}")
     void deleteFromRole_PermissionByRoleId(String id);
+
+    @Select("select * from role where id=#{roleId}")
+    @Results({
+            @Result(property = "id",column = "id"),
+            @Result(property = "permissions",column = "id",many =@Many(select = "com.itheima.ssm.dao.IPermissionDao.findPermissionByRoleId") )
+    })
+    Role findById(String roleId);
+
+    @Select("select * from permission where id not in " +
+            "(select permissionId from role_permission where roleId=#{roleId})"
+    )
+    List<Permission> findOtherPermissions(String roleId);
+
+    @Insert("insert into role_permission(roleId,permissionId) values(#{roleId},#{permissionId})")
+    void addPermissionToRole(@Param("roleId") String roleId, @Param("permissionId") String permissionId);
+
+
 }

@@ -5,3 +5,4 @@ com\itheima\ssm\dao\IMemberDao.class
 com\itheima\ssm\dao\ITravellerDao.class
 com\itheima\ssm\dao\IProductDao.class
 com\itheima\ssm\dao\IUserDao.class
+com\itheima\ssm\dao\ISysLogDao.class

@@ -1,5 +1,7 @@
 D:\repository\heima_ssm\itcast_ssm\itcast_service\src\main\java\com\itheima\ssm\service\IProductService.java
+D:\repository\heima_ssm\itcast_ssm\itcast_service\src\main\java\com\itheima\ssm\service\ISysLogService.java
 D:\repository\heima_ssm\itcast_ssm\itcast_service\src\main\java\com\itheima\ssm\service\impl\OrdersServiceImpl.java
+D:\repository\heima_ssm\itcast_ssm\itcast_service\src\main\java\com\itheima\ssm\service\impl\SysLogServiceImpl.java
 D:\repository\heima_ssm\itcast_ssm\itcast_service\src\main\java\com\itheima\ssm\service\IOrdersService.java
 D:\repository\heima_ssm\itcast_ssm\itcast_service\src\main\java\com\itheima\ssm\service\impl\RoleServiceImpl.java
 D:\repository\heima_ssm\itcast_ssm\itcast_service\src\main\java\com\itheima\ssm\service\impl\UserServiceImpl.java
